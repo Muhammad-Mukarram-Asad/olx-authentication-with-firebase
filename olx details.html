@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Ad Details:</h1>
+
+    <script>
+        getAdDetails()
+
+        function getAdDetails()
+        {
+            const URLParams = new URLSearchParams(window.location.search);
+            // const URLParams1 = new URLSearchParams(window.location.search);
+            const id = URLParams.get('id');
+            // const title = URLParams1.get('title')
+            console.log("Ad id --> " + id);
+            document.write("The Ad details on which you clicked are given as follows:\n");
+            document.write(`Ad Id is = ${id} <br>`);
+
+        }
+    </script>
+    
+</body>
+</html>

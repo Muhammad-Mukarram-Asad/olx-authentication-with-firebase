@@ -71,7 +71,7 @@ window.fetchAds = async function () {
 
 window.goToDetail = async function (userId) {
   location.href = `olx details.html?id=${userId}`;
-  // location.href = `olx details.html?title=${title}`;
+  // location.href = `script.html?title=${title}`;
 
 };
 
